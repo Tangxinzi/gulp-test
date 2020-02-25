@@ -1,0 +1,45 @@
+@media only screen and (min-width: 1200px) {
+  .ui.container {
+    width: 100%;
+    padding: 0 50px;
+    position: relative;
+  }
+}
+
+video::-webkit-media-controls-fullscreen-button,
+video::-webkit-media-controls-mute-button,
+video::-internal-media-controls-overflow-button,
+.trump-button[sub-component="fullscreen_btn"],
+.trump-button[now="fullscreen"],
+.trump-button[sub-component="setting"],
+video::-webkit-media-controls,
+video::-webkit-media-controls-fullscreen-button,
+video::-webkit-media-controls-play-button,
+video::-webkit-media-controls-timeline,
+video::-webkit-media-controls-current-time-display,
+video::-webkit-media-controls-time-remaining-display,
+video::-webkit-media-controls-mute-button,
+video::-webkit-media-controls-toggle-closed-captions-button,
+video::-webkit-media-controls-volume-slider,
+video::-webkit-media-controls {
+  display: none !important;
+}
+
+.ui.session {
+  text-align: left;
+  padding-top: 40px;
+  background: #ffffff;
+}
+
+.ui.grid .ui.container {
+  padding: 0;
+}
+
+.slick-slide:focus {
+  outline: none;
+}
+
+.slick-track {
+  margin: 0;
+  outline: 0;
+}

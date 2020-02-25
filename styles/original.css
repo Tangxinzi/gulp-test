@@ -1,0 +1,207 @@
+.ui.lists.originals .twelve.wide.column .ui.cards>.card>.image,
+.ui.lists.originals .twelve.wide.column .ui.card>.image,
+.ui.lists.originals .twelve.wide.column .ui.card>.image:not(.ui)>img {
+  width: 66.6%;
+}
+
+.ui.lists.originals .twelve.wide.column .column .content {
+  width: 33.3%;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 3rem;
+}
+
+.ui.lists.originals .ui.cards > .card > .content > h3.header:not(.ui),
+.ui.lists.originals .ui.card > .content > h3.header:not(.ui) {
+  font-size: 1.7em;
+  margin-top: 0.3rem;
+  margin-bottom: 0;
+}
+
+.ui.lists.originals .ui.cards>.card>.image, .ui.lists.originals .ui.card>.image, .ui.lists.originals .ui.card>.image:not(.ui)>img {
+  height: 400.33px;
+}
+
+.ui.lists.originals .slick-list {
+  padding: 1rem;
+  overflow: hidden;
+  border-radius: 3px;
+  width: 80%;
+  margin: 0 auto;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.ui.card .content .header {
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+.ui.lists.originals .column .foot.content {
+  margin-top: 1rem;
+}
+
+.ui.lists.originals .column .content {
+  bottom: 0;
+  z-index: 2;
+  width: 100%;
+  padding: 0;
+  font-size: 1.1rem;
+  background-color: #fff;
+  border-radius: 0 !important;
+}
+
+.waterfall {
+  -webkit-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 0;
+  column-gap: 0;
+}
+
+.waterfall .item {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-column-break-inside: avoid;
+          break-inside: avoid;
+  padding: 10px;
+}
+
+.waterfall .item-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  height: auto;
+  font-size: 20px;
+  color: #686868;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.waterfall .item .ui.card {
+  -webkit-box-shadow: 0px 0px 3px rgba(162, 162, 162, 0.33) !important;
+          box-shadow: 0px 0px 3px rgba(162, 162, 162, 0.33) !important;
+  border-radius: 3px;
+  padding: 1rem;
+}
+
+.ui.lists.slick.originals .ui.card .content .ui.huge.header h3 {
+  font-size: 2rem;
+}
+
+.ui.lists.slick.originals .ui.carousel .button.slick-arrow {
+  background: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.ui.lists.slick.originals .carousel .column {
+  margin: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.ui.lists.slick.originals .carousel .column.slick-current {
+  -webkit-box-shadow: 0 0 10px rgba(86, 86, 86, 0.20);
+          box-shadow: 0 0 10px rgba(86, 86, 86, 0.20);
+  opacity: 1;
+}
+
+.ui.lists.slick.originals .carousel .column a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 380px;
+}
+
+.ui.lists.slick.originals .carousel .column a > .image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-top: 23%;
+}
+
+.ui.lists.slick.originals .carousel .column a > .content {
+  margin: 0;
+  padding: 2.8rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 50%;
+}
+
+.ui.lists.slick.originals .carousel .column a > .warp .content {
+  background: transparent;
+  text-align: left;
+  width: auto;
+}
+
+.ui.lists.slick.originals .ui.card {
+  padding: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  opacity: 1 !important;
+}
+
+/* @media only screen and (max-width: 1199px) and (min-width: 992px), */
+@media only screen and (max-width: 1199px) {
+  .waterfall {
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+
+  .ui.lists.slick.originals .carousel .column a {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .ui.lists.slick.originals .carousel .column a > .image {
+    padding-top: 50%;
+    height: 50%;
+  }
+
+  .ui.lists.slick.originals .carousel .column a > .content {
+    width: 100%;
+    height: 100%;
+  }
+
+  .ui.huge.horizontal.statistics .statistic > .value {
+    font-size: 2rem !important;
+  }
+
+  .ui.lists.slick.originals .ui.card .content .ui.huge.header h3 {
+    font-size: 1.3rem !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .waterfall {
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+
+  .ui.lists.originals .slick-list {
+    width: 100%;
+  }
+}

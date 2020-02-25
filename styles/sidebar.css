@@ -1,0 +1,41 @@
+.ui.sidebar {
+  background: #fff;
+}
+
+.ui.sidebar .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: right;
+}
+
+.ui.sidebar .menu .item {
+  padding: 16px;
+  padding-right: 24px;
+  font-size: 18px;
+  color: #000;
+}
+
+.ui.sidebar .menu .item.active {
+  background: #f8f8f8;
+}
+
+.ui.sidebar .menu .item:hover {
+  background: #fbfbfb;
+}
+
+.ui.sidebar .close-icon {
+  height: 50px;
+  padding: 8px 1em;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}

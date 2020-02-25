@@ -1,0 +1,109 @@
+.big-card-component .row .column {
+  padding: 0;
+}
+
+.ui.lists.movies .column {
+  width: 25%;
+  font-size: 0;
+  display: inline-block;
+}
+
+#characters .small-card-component .column {
+  width: 10%;
+  font-size: 0;
+  display: inline-block;
+}
+
+/* .big-card-component */
+.big-card-component .row .column {
+  padding: 0;
+}
+
+.big-card-component .ui.card .image {
+  padding-top: 145% !important;
+  overflow: hidden;
+}
+
+.big-card-component .ui.card .image .bg {
+  background-image: url(images/wireframe/media-rectangle.jpg);
+  background-size: cover;
+  height: inherit;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+.big-card-component .ui.card .image .color {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  -webkit-transition: -webkit-transform 3s;
+  transition: -webkit-transform 3s;
+  -o-transition: transform 3s;
+  transition: transform 3s;
+  transition: transform 3s, -webkit-transform 3s;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+
+.big-card-component .ui.card .image .color:hover {
+  -webkit-transform: scale(2);
+      -ms-transform: scale(2);
+          transform: scale(2);
+}
+
+.big-card-component .ui.card .content {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 30px;
+  z-index: 2;
+}
+
+.big-card-component .ui.card .content .meta {
+  color: rgba(255, 255, 255, 0.77);
+  margin-bottom: 0;
+}
+
+.big-card-component .ui.card>.content>.header:not(.ui) {
+  font-size: 2em;
+  font-weight: 400;
+  color: #FFF;
+}
+
+/* .small-card-component */
+.small-card-component {
+  position: relative;
+  font-size: 0;
+}
+
+.small-card-component>.row>.column {
+  padding: 0;
+}
+
+.small-card-component .slick-list {
+  margin-left: -1rem;
+}
+
+.small-card-component .column {
+  padding-left: 1rem;
+}
+
+.small-card-component .ui.card .image {
+  height: 150px;
+  padding-top: 156% !important;
+}
+
+.ui.lists.news .ui.cards>.card .meta, .ui.card .meta {
+  color: rgba(0, 0, 0, 0.77);
+  letter-spacing: -0.6px;
+}
+
+@media only screen and (min-width: 992px) {}

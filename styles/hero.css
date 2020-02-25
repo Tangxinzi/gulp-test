@@ -1,0 +1,144 @@
+.ui.hero {
+  background: #f0f0f0;
+  margin-bottom: 0;
+}
+
+.ui.hero .item {
+  position: relative;
+  overflow: hidden;
+}
+
+.ui.hero .slick-dots {
+  bottom: 35px;
+}
+
+.ui.hero .item .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  max-height: 100vh;
+  min-height: 50vh;
+}
+
+.ui.hero .item .container {
+  z-index: 1;
+  width: 100%;
+}
+
+.ui.hero .item .warp {
+  margin: 0 100px
+}
+
+.ui.hero .item .header,
+.ui.hero .item .description h2 {
+  font-size: 48px;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.ui.hero .item .sub.header {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 8px;
+}
+
+.ui.hero .item .description {
+  font-size: 18px;
+  margin-bottom: 32px;
+  font-weight: 600;
+}
+
+.ui.hero .item .image {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 100vh;
+  min-height: 50vh;
+}
+
+.ui.hero .item .action {
+  margin-bottom: 32px;
+}
+
+.ui.hero .white {
+  color: #fff;
+}
+
+.ui.hero .big .header {
+  font-size: 56px;
+  letter-spacing: 8px;
+}
+
+.ui.hero .big .sub.header {
+  font-size: 24px;
+  letter-spacing: 16px;
+  font-family: "PingFangSC-Ultralight";
+}
+
+.ui.hero .bottom .content {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 4%;
+}
+
+@media only screen and (max-width: 767px) {
+  .ui.hero .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+
+  .ui.hero .item .warp {
+    margin: 0;
+  }
+
+  .ui.hero .item .image {
+    position: inherit;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    height: auto;
+  }
+
+  .ui.hero .item .content {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    height: auto;
+    color: #000;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .ui.hero .item .header {
+    font-size: 36px;
+    letter-spacing: 4px;
+  }
+
+  .ui.hero .item .sub.header {
+    font-size: 16px;
+    letter-spacing: 8px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {}

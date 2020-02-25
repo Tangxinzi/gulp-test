@@ -1,0 +1,311 @@
+.doubling.four.column.row.carousel {
+  font-size: 0;
+}
+
+.background {
+  position: relative;
+  height: 100vh;
+}
+
+.background .color {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.background .color.base .image {
+  position: absolute;
+  opacity: 0 !important;
+  -webkit-transition: opacity 2s;
+  -o-transition: opacity 2s;
+  transition: opacity 2s;
+  width: 100%;
+  background-position: right;
+  background-size: cover;
+  left: auto;
+  opacity: 0.8;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+.background .color.base .image.active {
+  opacity: 1 !important;
+}
+
+.background,
+.background .color.base .image,
+.background .ui.container .movie {
+  min-height: 650px;
+}
+
+.background .color.bar {
+  width: 100%;
+  background-color: #FFF;
+  height: 20vh;
+  top: auto;
+  bottom: 0;
+}
+
+.background .color .poster {
+  margin-right: calc(calc((100% - 11 * 24px) / 12) * 0.43);
+  padding-right: 19%;
+  padding-top: 28%;
+  position: relative;
+  -webkit-box-shadow: 0 0px 25px rgba(0, 0, 0, .22);
+          box-shadow: 0 0px 25px rgba(0, 0, 0, .22);
+}
+
+.background .color .poster .bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+}
+
+.background .qr_code {
+  color: #FFF;
+  cursor: pointer;
+  display: inline;
+}
+
+.background .ui.container .movie {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  padding: 0 50px 50px 50px;
+  color: #FFF;
+}
+
+.background .ui.container h1.title {
+  font-size: 3em;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+}
+
+.background .ui.container .tags {
+  line-height: 20px;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+  overflow: hidden;
+}
+
+.background .ui.lists .cards,
+.background .color.bar {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.background .ui.lists .ui.card {
+  margin: 0 1rem 0 0;
+}
+
+.background .ui.lists .ui.card>.image .bg {
+  height: 140px;
+  width: 260px;
+}
+
+.background .description {
+  letter-spacing: 0.8px;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.background .info {
+  margin-left: 50px;
+  width: 500px;
+}
+
+.ui.lists.characters .ui.cards>.card .meta, .ui.card .meta {
+  color: inherit;
+}
+
+.video-thumbnail__control {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 6px;
+  background-color: rgba(0,0,0,.35);
+  opacity: 0;
+  -webkit-transition: opacity .15s ease-in-out;
+  -o-transition: opacity .15s ease-in-out;
+  transition: opacity .15s ease-in-out;
+  z-index: 1;
+}
+
+.video-thumbnail__control__icon {
+  min-width: 44px;
+  height: 44px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 22px;
+  background-color: rgba(216,216,216,.3);
+  cursor: pointer;
+  z-index: 1;
+  padding: 0;
+  width: 54px;
+  height: 54px;
+  border-radius: 27px;
+}
+
+.video-thumbnail__control:hover {
+  opacity: 1;
+}
+
+.video-thumbnail__control__icon::before {
+  content: '';
+  width: 20px;
+  height: 23px;
+  margin-top: 1px;
+  margin-left: 6px;
+  background-image: url(../images/icons/video-thumbnail-lg.svg);
+  background-size: 20px 23px;
+  z-index: 1;
+}
+
+#player {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#player video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .background .color .poster {
+    padding-right: 29%;
+    padding-top: 43%;
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .background .ui.container .movie {
+    padding: 0;
+  }
+
+  .background .color .poster {
+    padding-right: 40%;
+    padding-top: 58%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .background {
+    height: 70vh;
+  }
+
+  .background .qr_code {
+    display: none;
+  }
+
+  .background .ui.container .movie {
+    padding: 0;
+    padding-top: 100%;
+    min-height: auto;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    height: 0;
+  }
+
+  .background .ui.container h1.title {
+    font-size: 2rem;
+  }
+
+  .background .color .poster,
+  .background .info {
+    height: 225px;
+    margin: 0;
+  }
+
+  .background .color .poster {
+    padding-right: 40%;
+    padding-top: 58%;
+    height: 0;
+  }
+
+  .background .info {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+    margin-left: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    color: #000;
+  }
+
+  .background .color,
+  .background .color.base .image {
+    height: 35vh !important;
+    min-height: auto;
+  }
+
+  .background .color.bar {
+    display: none;
+  }
+
+  .background .ui.container .info {
+    letter-spacing: 0.8px;
+    height: auto;
+    margin-bottom: 0;
+    color: #a0a0a0;
+  }
+
+  .background .description {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -12%;
+    color: #a0a0a0;
+    margin-top: 1rem;
+    width: 100%;
+  }
+}

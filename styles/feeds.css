@@ -1,0 +1,108 @@
+.ui.feeds.main .content .meta,
+.ui.feeds.slider .content .meta {
+  color: #7b7b7b;
+}
+
+.slider .ui.feed + .feed {
+  margin-top: 1rem;
+}
+
+.main .ui.feed,
+.slider .ui.feed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.ui.feeds.slider .ui.clearing.divider:last-child {
+  display: none;
+}
+
+.main .ui.feed .content,
+.slider .ui.feed .content {
+  padding: 0 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ui.feed .header {
+  font-size: 1.3rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #000;
+
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.ui.feeds.slider .content .meta p {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.ui.lists .column a.feed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ui.feed .description {
+  color: #000;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.main .ui.feed .image,
+.main .ui.feed .image .bg {
+  width: 290px;
+  height: 170px;
+  margin-right: 1rem;
+}
+
+.main .ui.feed .image .bg,
+.slider .ui.feed .image .bg {
+  background-size: cover;
+}
+
+.slider .ui.feed>.content {
+  flex: 1;
+  display: block;
+  text-align: left;
+  /* height: 90px; */
+}
+
+.ui.feed .image,
+.ui.feed .image .bg {
+  width: 140px;
+  height: 90px;
+  margin-right: 1rem;
+  border-radius: 2px;
+  background-color: rgba(204, 204, 204, 0.18);
+}

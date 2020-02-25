@@ -1,0 +1,108 @@
+.ui.cards {
+  padding-top: 80px;
+  background: #f0f0f0;
+}
+
+.ui.card {
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  transition: -webkit-box-shadow 0.5s;
+  -o-transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
+  border-radius: 0;
+  width: 100%;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: opacity 0.5s, bottom 0.5s;
+  -o-transition: opacity 0.5s, bottom 0.5s;
+  transition: opacity 0.5s, bottom 0.5s;
+}
+
+.ui.card:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.ui.card:hover .image .bg {
+  background-size: 110%;
+}
+
+.ui.cards>.card a, .ui.card a {
+  color: inherit;
+  font-size: inherit;
+}
+
+.ui.cards>.card>.image, .ui.card>.image {
+  border-radius: 0 !important;
+}
+
+.ui.card .image>img {
+  width: 100%;
+}
+
+.ui.card .content {
+  border-top: 0;
+  padding: 40px;
+  padding-bottom: 56px;
+}
+
+.ui.card .content .header {
+  font-size: 1.3rem;
+  margin: 0;
+  margin-bottom: 12px;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.big-card-component .ui.card .content h4.header {
+  color: #FFF;
+  font-size: 2rem;
+}
+
+.ui.cards>.card .meta, .ui.card .meta {
+  margin-bottom: 0.5rem;
+  font-size: 15px;
+}
+
+.ui.card .meta.time {
+  color: #474747;
+}
+
+.ui.card .content .sub.header {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.ui.card .content .description {
+  margin-bottom: 8px;
+}
+
+@media only screen and (max-width: 767px) {
+  .big-card-component .ui.card .content h4.header,
+  .small-card-component .ui.card .content h4.header {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+  }
+
+  .big-card-component .ui.card .content .meta,
+  .small-card-component .ui.card .content .meta {
+    display: none;
+  }
+
+  .big-card-component .ui.card .content {
+    padding: 15px !important;
+  }
+
+  body .ui.lists.news .ui.cards>.card .meta, body .ui.card .meta {
+    color: #000;
+  }
+}

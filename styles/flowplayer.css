@@ -1,0 +1,54 @@
+.ui.video {
+  padding-top: 80px;
+  background: #f0f0f0;
+}
+
+.ui.video .playlist {
+  margin-top: 1rem;
+  padding: 0;
+}
+
+#demo {
+  background-color: #000;
+  padding: 3em 1.5em;
+}
+
+.playlist {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.thumbs {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: .5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.thumbs span {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  cursor: pointer;
+  width: 24%;
+}
+
+.thumbs span:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.thumbs img {
+  margin: 0 0 -6px;
+  max-width: 100%;
+}
+
+.thumbs .selected {
+  border: 5px solid #009fff;
+  border-radius: 2px;
+  margin-top: -3px;
+  -webkit-filter: none;
+          filter: none
+}

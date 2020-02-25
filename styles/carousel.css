@@ -1,0 +1,64 @@
+.ui.carousel .prev.button {
+  left: 24px;
+}
+
+.ui.carousel .next.button {
+  right: 24px;
+}
+
+.ui.carousel .prev.bottom.button, .ui.carousel .next.bottom.button {
+  top: 100%;
+  margin-top: -72px;
+}
+
+.ui.carousel .prev.button, .ui.carousel .next.button {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  margin-top: -24px;
+  padding: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  text-align: center;
+  background: rgb(255, 255, 255);
+  -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.16);
+          box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.16);
+  -webkit-transition: -webkit-box-shadow .3s;
+  transition: -webkit-box-shadow .3s;
+  -o-transition: box-shadow .3s;
+  transition: box-shadow .3s;
+  transition: box-shadow .3s, -webkit-box-shadow .3s;
+  color: rgb(0, 0, 0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 0;
+}
+
+.ui.carousel .button:hover {
+  -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.32);
+          box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.32);
+}
+
+.ui.container .ui.carousel .prev.button {
+  left: -24px;
+}
+
+.ui.container .ui.carousel .next.button {
+  right: -24px;
+}
+
+.small-card-component .ui.carousel .button {
+  top: 36% !important;
+}
+
+.ui.vertical.story .slick-dots {
+  bottom: -48px;
+}
